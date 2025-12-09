@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<title>Saturdays At Your Place - الرئيسية</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{
+    --bg:#0f1724; --card:#0b1220; --accent:#f97316; --muted:#cbd5e1; 
+  }
+  body{ margin:0; font-family: "Segoe UI", Tahoma, sans-serif; background:var(--bg); color:var(--muted); direction:rtl; }
+  header{ background:linear-gradient(90deg, rgba(249,115,22,0.12), rgba(249,115,22,0.02)); padding:18px; display:flex; align-items:center; gap:16px; }
+  .logo{ font-weight:700; color:var(--accent); font-size:20px; }
+  nav{ margin-left:auto; }
+  nav a{ color:var(--muted); text-decoration:none; margin:0 8px; padding:8px 12px; border-radius:8px; background:transparent; }
+  nav a.active, nav a:hover{ background:rgba(255,255,255,0.04); color:#fff; }
+  .container{ padding:22px; max-width:1000px; margin:0 auto; }
+  .hero{ background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:18px; border-radius:12px; display:grid; grid-template-columns:1fr 320px; gap:18px; align-items:center; }
+  h1{ margin:0 0 8px 0; color:#fff; }
+  p.lead{ margin:0 0 12px 0; color:var(--muted); line-height:1.6; }
+  .meta{ font-size:14px; color:#9aa7b8; }
+  .thumbs{ display:flex; gap:8px; flex-wrap:wrap; }
+  .thumbs img{ width:80px; height:80px; object-fit:cover; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.6); }
+  table{ width:100%; border-collapse:collapse; margin-top:14px; color:var(--muted); }
+  th,td{ text-align:right; padding:8px; border:1px solid rgba(255,255,255,0.04); }
+  hr{ border:none; height:1px; background:rgba(255,255,255,0.03); margin:18px 0; }
+  footer{ color:#89a1b3; text-align:center; padding:18px 0; font-size:13px; }
+  .btn{ display:inline-block; padding:8px 12px; background:var(--accent); color:#08111b; border-radius:8px; text-decoration:none; font-weight:600; }
+  @media (max-width:800px){ .hero{ grid-template-columns:1fr; } nav{ margin-top:8px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Saturdays At Your Place</div>
+  <nav>
+    <a href="index.html" class="active">الرئيسية</a>
+    <a href="gallery.html" class="active">الصور</a>
+    <a href="about.html">حول الفرقة</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <h1>Saturdays At Your Place</h1>
+      <p class="lead">فرقة موسيقية بديلة/بوب تخلق أجواء دافئة وحميمية — هذه الصفحة مشروع عملي يعرض معلومات، صور فنية، صوت بديل وبيانات منظمة عن الفرقة.</p>
+
+      <div class="meta">تأسست: 2018 • النوع: Indie Pop / Alternative • أعضاء: 4</div>
+
+      <hr>
+
+      <h3>محتوى المشروع</h3>
+      <ul>
+        <li>معرض صور فنية للفرق (6 صور)</li>
+        <li>مكتبة وسائط: ملف صوتي بديل + فيديو توضيحي</li>
+        <li>معلومات عن الأعضاء وجداول وملاحظات التصميم</li>
+      </ul>
+
+      <a class="btn" href="gallery.html">تشوف الصور</a>
+    </div>
+
+    <aside>
+      <div style="background:var(--card); padding:12px; border-radius:10px;">
+        <h4 style="margin:0 0 8px 0; color:#fff;">أحدث إصدار</h4>
+        <p style="margin:0 0 12px 0; color:var(--muted)">EP: "Late Night Windows" — أصوات درامية وإيقاعات هادئة.</p>
+        <img src="band0.png" alt="صورة الفرقة 1" style="width:100%; border-radius:8px; display:block;">
+      </div>
+    </aside>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>تفاصيل المشروع (جدول)</h2>
+    <table>
+      <tr><th>البند</th><th>الوصف</th></tr>
+      <tr><td>الهدف</td><td>عرض معلومات وصور ووسائط عن الفرقة لمشروع مدرسي</td></tr>
+      <tr><td>الصور</td><td>6 صور فنية (band1.png ... band6.png)</td></tr>
+      <tr><td>الصوت</td><td>بديل صوتي ملائم/غير محمي (مسموح بالاستخدام التعليمي)</td></tr>
+    </table>
+  </section>
+
+</main>
+
+<footer>
+  مشروع: Saturdays At Your Place — صفحة العرض الرئيسية — صمّم بواسطة طالبك الشجاع 😉
+</footer>
+
+</body>
+</html>

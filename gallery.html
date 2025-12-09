@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<title>معرض - Saturdays At Your Place</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{ margin:0; font-family: Arial, Helvetica, sans-serif; background:#111827; color:#e6eef6; direction:rtl; }
+  header{ padding:14px; background:linear-gradient(90deg,#0f1724,#0b1220); display:flex; align-items:center; gap:12px; }
+  header .logo{ color:#f97316; font-weight:700; }
+  nav{ margin-left:auto; }
+  nav a{ color:#cbd5e1; text-decoration:none; margin:0 6px; padding:6px 10px; border-radius:6px; }
+  nav a:hover, nav a.active{ background:rgba(249,115,22,0.12); color:#fff; }
+  .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding:18px; max-width:1100px; margin:0 auto; }
+  .card{ background:#081023; padding:10px; border-radius:10px; text-align:center; }
+  .card img{ width:100%; height:220px; object-fit:cover; border-radius:8px; }
+  .caption{ margin-top:8px; color:#9fb0c8; font-size:14px; }
+  @media(max-width:900px){ .grid{ grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:600px){ .grid{ grid-template-columns:1fr; } .card img{ height:300px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Saturdays At Your Place</div>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="gallery.html" class="active">الصور</a>
+    <a href="about.html">حول الفرقة</a>
+  </nav>
+</header>
+
+<main>
+  <section class="grid">
+    <div class="card">
+      <img src="band1.png" alt="Band art 1">
+      <div class="caption">عرض حي — lead singer</div>
+    </div>
+
+    <div class="card">
+      <img src="band2.png" alt="Band art 2">
+      <div class="caption">الآلة الإيقاعية — طاقة الأداء</div>
+    </div>
+
+    <div class="card">
+      <img src="band3.png" alt="Band art 3">
+      <div class="caption">عزف غيتار كهربائي</div>
+    </div>
+
+    <div class="card">
+      <img src="band4.png" alt="Band art 4">
+      <div class="caption">الكيبورد والميلوديا</div>
+    </div>
+
+    <div class="card">
+      <img src="band5.png" alt="Band art 5">
+      <div class="caption">لقطة بانورامية للفرقة</div>
+    </div>
+
+    <div class="card">
+      <img src="band6.png" alt="Band art 6">
+      <div class="caption">بوستر فني للحفل</div>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
